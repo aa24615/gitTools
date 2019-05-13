@@ -1,5 +1,6 @@
 # git自动批量提交
 每个程序员都不可能开发一个项目,每天下班或者意外可能丢失代码
+
 为了能够让代码丢失率更低,使用git自动批量提交,也许能帮助到您!
 
 ## 下载/克隆到你的本地
@@ -11,8 +12,10 @@ $ git clone git@github.com:aa24615/gitTools.git
 
 ## linux/mac平台使用方法
 
-####请规范放置你的网站项目
+###请规范放置你的网站项目
+
 /www 作为根目录 多个站点请放在 www/ 下
+
 例如
 ```
 /www/web1/
@@ -20,7 +23,7 @@ $ git clone git@github.com:aa24615/gitTools.git
 
 ```
 
-###自动提交请将本脚本添加到 crontab 中 最少每天执行一次
+###添加到crontab
 ```
 $ crontab -e
  
@@ -35,4 +38,4 @@ $ crontab -e
 
 ## 作者博客
 
-- [http://blog.php127.com/](http://blog.php127.com/) 
+- 读心印 [http://blog.php127.com/](http://blog.php127.com/) 
