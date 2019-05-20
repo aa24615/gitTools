@@ -36,7 +36,11 @@ $ crontab -e
 ```
 
 ## win平台使用方法
-整理中...
+
+### 下载git工具
+下载地址: [https://git-scm.com](https://git-scm.com)
+
+###
 
 
 ## 联系我们
