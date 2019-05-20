@@ -38,12 +38,15 @@ $ crontab -e
 ## win平台使用方法
 
 ### 下载git工具
+
 下载地址: [https://git-scm.com](https://git-scm.com)
 
 ### 修改配置
 
-将你的网站放在 D:\www\* 或者 C
+将你的网站放在 D:\www\ 或者 C盘
+
 然后修改 push.sh 网站根目录与日志存放的路径
+
 如果你提放在D盘 则是 /d/www/
 
 ### 手动测试
@@ -61,11 +64,13 @@ $ crontab -e
 ### 添加定时器
 
 开始->控制面板->管理工具->任务计划程序
+
 创建任务
 
 ![创建任务](img/1.jpg)
 
 添加操作,选择你的git安装位置,选择git-bash.exe
+
 参数为push.sh的路径
 
 ![添加操作](img/2.jpg)
