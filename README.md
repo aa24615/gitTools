@@ -38,6 +38,9 @@ $ crontab -e
 ## win平台使用方法
 整理中...
 
-## 作者博客
 
-- 读心印 [http://blog.php127.com/](http://blog.php127.com/) 
+## 联系我们
+
+- QQ群: [324098841](http://shang.qq.com/wpa/qunwpa?idkey=6f5462146888da75feaaa1fe1ab3addfcea63f6454548238033c6a91fa610e4e)
+
+- 博客: [blog.php127.com](http://blog.php127.com)
