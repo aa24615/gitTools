@@ -49,9 +49,13 @@ $ crontab -e
 ### 手动测试
 
 找到你的git安装位置,一般默认安装 C:\Program Files\Git\
+
 按住S+右键 输入命令 "C:\Program Files\Git\git-bash.exe"  你的push.sh路径
+
 "C:\Program Files\Git\git-bash.exe"  D:\www\gitTools\push.sh
+
 > 注意 第一个路径需要加引号,因为Program Files目录中有空格
+
 测试成功即可
 
 ### 添加定时器
@@ -59,16 +63,16 @@ $ crontab -e
 开始->控制面板->管理工具->任务计划程序
 创建任务
 
-![创建任务](1.jpg)
+![创建任务](img/1.jpg)
 
 添加操作,选择你的git安装位置,选择git-bash.exe
 参数为push.sh的路径
 
-![添加操作](2.jpg)
+![添加操作](img/2.jpg)
 
 设定你想要执行的条件
 
-![条件](3.jpg)
+![条件](img/3.jpg)
 
 
 ## 联系我们
