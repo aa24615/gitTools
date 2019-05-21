@@ -1,7 +1,10 @@
 # git自动批量提交
+
 每个程序员都不可能开发一个项目,每天下班可能忘记提交或者意外导致丢失代码
 
 为了能够让代码丢失率更低,使用git自动批量提交,也许能帮助到您!
+
+> 注意: 本脚本只适用于个人多项目,多人协作开发请手工提交
 
 ## 下载/克隆到你的本地
 ```
@@ -85,3 +88,5 @@ $ crontab -e
 - QQ群: [324098841](http://shang.qq.com/wpa/qunwpa?idkey=6f5462146888da75feaaa1fe1ab3addfcea63f6454548238033c6a91fa610e4e)
 
 - 博客: [blog.php127.com](http://blog.php127.com)
+
+- 更多开源项目 [https://github.com/aa24615](https://github.com/aa24615)
