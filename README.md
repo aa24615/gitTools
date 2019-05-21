@@ -89,4 +89,4 @@ $ crontab -e
 
 - 博客: [blog.php127.com](http://blog.php127.com)
 
-- 更多开源项目 [https://github.com/aa24615](https://github.com/aa24615)
+- 更多开源项目: [github.com/aa24615](https://github.com/aa24615)
