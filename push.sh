@@ -12,7 +12,7 @@ root="/www/" #程序根目录
 list=$(ls -F $root | grep '/$') #获取网站列表
 for dirname in $list
 do
-    path=$root"/"$dirname #网站绝对路径;
+    path=${root}${dirname} #网站绝对路径;
     cd $path #进入网站目录
     isGit=$(ls -a|grep -x .git | wc -l) #判断是否有仓库
     if [ $isGit -gt 0 ];then
