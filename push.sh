@@ -8,7 +8,7 @@ times=`date "+%H:%M:%S"` #时间
 logs=/www/gitTools/logs/$dates.log #日志
 echo "==========="$times"===========" >> $logs
 
-root="/www" #程序根目录
+root="/www/" #程序根目录
 list=$(ls -F $root | grep '/$') #获取网站列表
 for dirname in $list
 do
