@@ -18,7 +18,7 @@ do
     isGit=$(ls -a|grep -x .git/ | wc -l) #判断是否有仓库
     if [ $isGit -gt 0 ];then
         isAdd=$(git status | grep "git add" | wc -l) #判断是否需要提交
-		isAdd=$(git log master ^workfiles/master | grep "commit" | wc -l)
+		isAdd=$(git log master ^workfiles/master | grep "commit" | wc -l)  #判断是否有本地commit了，但未push的
         #if [ $isAdd -gt 0 ];then
 			git pull workfiles master
             git add .
