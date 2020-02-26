@@ -10,24 +10,24 @@ echo "==========="$times"===========" >> $logs
 
 root="/D/GitWorkSpace-Sync/" #程序根目录
 list=$(ls -F $root | grep '/$') #获取网站列表
-echo "==========="$list"===========" >> $logs
 
 for dirname in $list
 do
     path=${root}${dirname} #网站绝对路径;
     cd $path #进入网站目录
     isGit=$(ls -a|grep -x .git/ | wc -l) #判断是否有仓库
-	echo "===========isGit"$isGit"===========" >> $logs
     if [ $isGit -gt 0 ];then
         isAdd=$(git status | grep "git add" | wc -l) #判断是否需要提交
-        if [ $isAdd -gt 0 ];then
+		isAdd=$(git log master ^workfiles/master | grep "commit" | wc -l)
+        #if [ $isAdd -gt 0 ];then
+			git pull workfiles master
             git add .
             git commit -m 自动提交_$dates_$times
             git push workfiles master
             echo "+提交完成" $path >> $logs
-        else
+        #else
             echo "-没有更改" $path >> $logs
-        fi
+        #fi
     else
         echo "x没有仓库" $path >> $logs
     fi
