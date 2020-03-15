@@ -18,16 +18,16 @@ do
     isGit=$(ls -a|grep -x .git/ | wc -l) #判断是否有仓库
     if [ $isGit -gt 0 ];then
         isAdd=$(git status | grep "git add" | wc -l) #判断是否需要提交
-		isAdd=$(git log master ^workfiles/master | grep "commit" | wc -l)  #判断是否有本地commit了，但未push的
-        #if [ $isAdd -gt 0 ];then
+		isCommit=$(git log master ^workfiles/master | grep "commit" | wc -l)  #判断是否有本地commit了，但未push的
+        if [ $isAdd -gt 0 ]||[ $isCommit -gt 0 ];then
 			git pull workfiles master
             git add .
             git commit -m 自动提交_$dates_$times
             git push workfiles master
             echo "+提交完成" $path >> $logs
-        #else
+        else
             echo "-没有更改" $path >> $logs
-        #fi
+        fi
     else
         echo "x没有仓库" $path >> $logs
     fi

@@ -1,0 +1,10 @@
+cd XXXXXXX/   #进入文件夹
+git init
+touch "README.md"
+git add README.md
+git commit -m "first commit"
+在git上新建一个仓储
+git remote add workfiles https://xxxxxxxxx.git
+git remote -v
+git push workfiles master -f
+git status
