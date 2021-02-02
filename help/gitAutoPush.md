@@ -48,7 +48,7 @@ $ crontab -e
 
 ### win平台使用方法
 
-> linux/mac平台文件位于 /bin/gitAutoPushWin.sh
+> win平台文件位于 /bin/gitAutoPushWin.sh
 
 #### 下载git工具
 
