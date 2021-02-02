@@ -1,7 +1,7 @@
 
 ## git自动批量提交
 
-> 文件位于 /bin/gitAutoPush.sh
+
 
 
 每个程序员都不可能开发一个项目,每天下班可能忘记提交或者意外导致丢失代码
@@ -22,6 +22,8 @@ $ git clone git@github.com:aa24615/gitTools.git
 修改 push.sh 修改您的日志保存路径
 
 ### linux/mac平台使用方法
+
+> linux/mac平台文件位于 /bin/gitAutoPush.sh
 
 > 请规范放置你的网站项目
 
@@ -45,6 +47,8 @@ $ crontab -e
 ```
 
 ### win平台使用方法
+
+> win平台文件位于 /bin/gitAutoPushWin.sh
 
 #### 下载git工具
 
