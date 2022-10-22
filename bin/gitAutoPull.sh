@@ -3,7 +3,7 @@
 ##########git自动批量拉取##########
 #################################
 
-root="/www/wwwroot" #程序根目录
+root="/www/wwwroot/" #程序根目录
 
 list=$(ls -F $root | grep '/$') #获取网站列表
 for dirname in $list
